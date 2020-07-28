@@ -1,6 +1,7 @@
 import React from 'react';
 import './profile.css';
 import { Link } from '@reach/router';
+import ReviewForm from '../../components/forms/ReviewForm';
 
 const Profile = (props) => {
 
@@ -18,6 +19,11 @@ const Profile = (props) => {
             <p>12/12/12</p>
             <Link to="/users/1/edit">Edit</Link><br/><br/><br/>
             <Link to="/users/1/create/collab">Create Collab</Link>
+            <ReviewForm/>
+            <div className="reviews">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio delectus reprehenderit hic necessitatibus magni! Assumenda voluptatum, amet temporibus autem deserunt eius, incidunt voluptas maiores tempore, nisi quod officia omnis!</p>
+                <h3>- Bob Sagot</h3>
+            </div>
         </div>
     )
 }
