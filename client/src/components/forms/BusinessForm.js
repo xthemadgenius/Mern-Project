@@ -1,46 +1,48 @@
 import React from 'react';
-import Opps from '../select/Opps';
-// import 'form.css';
+import FormHead from '../select/FormHead';
+import { TheForm, FillLabel, FormGroup, MainInput, RoundedBtn } from './Styles';
 
 const BusinessForm = (props) => {
 
     return (
         <div>
-            <Opps/>
-            <form>
-                <div>
-                    <label htmlFor="">First Name</label>
-                    <input type="text"/>
-                </div>
-                <div>
-                    <label htmlFor="">Last Name</label>
-                    <input type="text"/>
-                </div>
-                <div>
-                    <label htmlFor="">Company Name</label>
-                    <input type="text"/>
-                </div>
-                <div>
-                    <label htmlFor="">Phone Number</label>
-                    <input type="number"/>
-                </div>
-                <div>
-                    <label htmlFor="">Email</label>
-                    <input type="email"/>
-                </div>
-                <div>
-                    <label htmlFor="">Location</label>
-                    <input type="text"/>
-                </div>
-                <div>
-                    <label htmlFor="">Password</label>
-                    <input type="password"/>
-                </div>
-                <div>
-                    <label htmlFor="">Confirm Password</label>
-                    <input type="password"/>
-                </div>
-            </form>
+            <FormHead/>
+            <TheForm>
+                <h3>Create a New Recruiter</h3>
+                <FormGroup>
+                    <FillLabel>First Name</FillLabel>
+                    <MainInput type="text"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Last Name</FillLabel>
+                    <MainInput type="text"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Company Name</FillLabel>
+                    <MainInput type="text"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Phone Number</FillLabel>
+                    <MainInput type="number"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Email</FillLabel>
+                    <MainInput type="email"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Location</FillLabel>
+                    <MainInput type="text"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Password</FillLabel>
+                    <MainInput type="password"/>
+                </FormGroup>
+                <FormGroup>
+                    <FillLabel>Confirm Password</FillLabel>
+                    <MainInput type="password"/>
+                </FormGroup>
+                <RoundedBtn>Add Recruiter</RoundedBtn>
+            </TheForm>
         </div>
     )
 }
