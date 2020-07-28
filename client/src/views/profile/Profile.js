@@ -1,7 +1,6 @@
 import React from 'react';
 import './profile.css';
 import { Link } from '@reach/router';
-import CollabForm from '../../components/forms/CollabForm';
 
 const Profile = (props) => {
 
@@ -17,8 +16,8 @@ const Profile = (props) => {
             <p>React, Javascript, Html, css, Python, Node.js, AWS</p>
             <h3>Offer Deadline</h3>
             <p>12/12/12</p>
-            <Link to="/users/1/edit">Edit</Link>
-            <CollabForm/>
+            <Link to="/users/1/edit">Edit</Link><br/><br/><br/>
+            <Link to="/users/1/create/collab">Create Collab</Link>
         </div>
     )
 }
