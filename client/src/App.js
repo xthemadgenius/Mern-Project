@@ -11,6 +11,7 @@ import Profile from './views/profile/Profile';
 import Users from './components/ops/Users';
 import Collaborate from './components/ops/Collaborate';
 import Business from './components/ops/Business';
+import UpdateForm from './views/edit/UpdateForm';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <BusinessForm path="/business/create"/>
         <LoginForm path="/login"/>
         <Profile path="users/:id"/>
+        <UpdateForm path="/users/1/edit"/>
       </Router>
     </div>
   );

@@ -48,3 +48,38 @@ export const RoundedBtn = styled.button`
     font-size: 20px;
     font-weight: bold;
 `;
+
+// Collab Form
+
+export const ColForm = styled.form`
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff0ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+`;
+
+export const TextBox = styled.textarea`
+    width: 500px;
+    height: 200px;
+    resize: none;
+    border-radius: 20px;
+`;
+
+export const ColLabel = styled.label`
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+`;
+export const ColInput = styled.input`
+    width: 500px;
+    height: 30px;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 20px;
+`;
